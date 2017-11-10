@@ -13,6 +13,7 @@ dependencies {
     compile(projectRuntimeJar(":kotlin-preloader"))
     compile(project(":idea:idea-jps-common"))
     compile(ideaSdkDeps("jps-builders", "jps-builders-6", subdir = "jps"))
+    testCompileOnly(project(":kotlin-reflect-api"))
     testCompile(project(":compiler:incremental-compilation-impl"))
     testCompile(projectTests(":compiler:tests-common"))
     testCompile(projectTests(":compiler:incremental-compilation-impl"))
